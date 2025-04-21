@@ -1,0 +1,11 @@
+# Do not edit - changes here will be overwritten by Copier
+_commit: v0.5.0
+_src_path: gh:fractal-analytics-platform/fractal-tasks-template
+author_email: atschan@apricotx.com
+author_name: Adrian Tschan
+package_name: apx_mf_wrapper_task
+project_name: apx-mf-wrapper-task
+project_short_description: Wrapper for mf CLI application to convert .tif files to
+    .png
+project_url: ''
+
