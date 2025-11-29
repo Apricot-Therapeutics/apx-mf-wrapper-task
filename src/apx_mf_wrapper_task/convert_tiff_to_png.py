@@ -26,7 +26,6 @@ logger = logging.getLogger(__name__)
 def convert_tiff_to_png(  # noqa: C901
         *,
         # Default arguments for fractal tasks:
-        zarr_urls: list[str],
         zarr_dir: str,
         # Task-specific arguments:
         image_dir: str,
@@ -39,9 +38,6 @@ def convert_tiff_to_png(  # noqa: C901
 
     Args:
         Args:
-        zarr_urls: List of paths or urls to the individual OME-Zarr image to
-            be processed.
-            (standard argument for Fractal tasks, managed by Fractal server).
         zarr_dir: path of the directory where the new OME-Zarrs will be
             created.
             (standard argument for Fractal tasks, managed by Fractal server).
@@ -89,7 +85,7 @@ def convert_tiff_to_png(  # noqa: C901
 
 
 if __name__ == "__main__":
-    from fractal_tasks_core.tasks._utils import run_fractal_task
+    from fractal_task_tools.task_wrapper import run_fractal_task
 
     run_fractal_task(
         task_function=convert_tiff_to_png,

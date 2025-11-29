@@ -5,6 +5,7 @@ to the package manifest.
 """
 
 from fractal_tasks_core.dev.create_manifest import create_manifest
+from fractal_tasks_tools.
 
 if __name__ == "__main__":
     PACKAGE = "apx_mf_wrapper_task"

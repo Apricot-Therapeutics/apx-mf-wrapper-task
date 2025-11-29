@@ -7,6 +7,7 @@
       "tags": [
         "Conversion"
       ],
+      "type": "converter_non_parallel",
       "executable_non_parallel": "convert_tiff_to_png.py",
       "meta_non_parallel": {
         "cpus_per_task": 1,
@@ -15,14 +16,6 @@
       "args_schema_non_parallel": {
         "additionalProperties": false,
         "properties": {
-          "zarr_urls": {
-            "items": {
-              "type": "string"
-            },
-            "title": "Zarr Urls",
-            "type": "array",
-            "description": "List of paths or urls to the individual OME-Zarr image to be processed. (standard argument for Fractal tasks, managed by Fractal server)."
-          },
           "zarr_dir": {
             "title": "Zarr Dir",
             "type": "string",
@@ -47,7 +40,6 @@
           }
         },
         "required": [
-          "zarr_urls",
           "zarr_dir",
           "image_dir"
         ],
